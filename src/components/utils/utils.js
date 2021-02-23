@@ -22,3 +22,12 @@ export function createPages(pages, pagesCount, currentPage) {
 export function getRandom() {
     return Math.ceil(Math.random() * 10000);
 }
+export function tableRow (id, number, title) {
+    return (
+        <tr key={id}>
+        <td>{id}</td>
+        <td>{number}</td>
+        <td>{title}</td>
+        </tr>
+    )
+}
