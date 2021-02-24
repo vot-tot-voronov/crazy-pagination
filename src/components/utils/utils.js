@@ -1,7 +1,7 @@
 export function createPages(pages, pagesCount, currentPage) {
     if(pagesCount > 10) {
-        if(currentPage > 6) {
-            for (let i = currentPage-5; i <= currentPage+5; i++) {
+        if(currentPage > 5) {
+            for (let i = currentPage-4; i <= currentPage+5; i++) {
                 pages.push(i)
                 if(i === pagesCount) break
             }
